@@ -1,0 +1,25 @@
+body {
+    background-image: url('cover.jpg');
+    font-family: 'Hind', sans-serif;
+}
+
+.title {
+    font-size: 70px;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 25px;
+    color: #fff;
+}
+
+.desc {
+    font-size: 14px;
+    color: #fff;
+}
+
+.intro-divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+}
