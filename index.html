@@ -9,7 +9,7 @@
     <meta content="Matias Grioni" name="author"/>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
 
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
 
@@ -18,22 +18,68 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
 
     <!-- Page styling -->
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
-    <div id="root" class="container" data-image-src="cover.jpg">
+    <div id="root" class="container" data-image-src="static/cover-1.jpg">
       <div class="row">
         <div class="col-sm-4">
           <div class="intro-divider">
             <h1 class="title">Matias Grioni</h1>
             <p class="subtitle">Student &amp; Researcher</p>
-            <p class="desc">I am a rising senior at Ohio State University currently interning at Quid, Inc. in San Francisco. I do research, mainly in dependency parsing, under Marie-Catherine de Marneffe. My study focuses on AI, linguistics, and mathematics and I am interested in NLP, computer generated music and art, and applications of CS that automate difficult tasks for surprising results. In my free time I like to take photos, bike, and play volleyball.</p>
+            <p class="desc">I am a rising senior at Ohio State University currently interning at Quid, Inc. in San Francisco. I do research, mainly in dependency parsing, under Marie-Catherine de Marneffe. My studies focus on AI, linguistics, and mathematics and I am interested in NLP, computer generated music and art, and applications of CS that automate difficult tasks for surprising results. In my free time I like to take photos (like this background), bike, and play volleyball.</p>
           </div>
+          <div>
+            <ul class="list-inline bulleted">
+              <li id="projects-header" class="desc experience-link">projects</li>
+              <li id="papers-header" class="desc experience-link">papers</li>
+              <li id="work-header" class="desc experience-link">work</li>
+            </ul>
+          </div>
+          <div id="projects" class="experience">
+            <div class="item">
+              <p class="desc"><a href="https://github.com/matgrioni/euchre-bot">euchre ai</a></p>
+              <p class="sub-desc">an attempt to use mcts to create a super-human ai for the card game euchre</p>
+            </div>
+            <div class="item">
+              <p class="desc"><a href="https://github.com/matgrioni/keylogger">keylogger</a></p>
+              <p class="sub-desc">install on victim's computer and send their keystrokes and web activity to a client on your computer</p>
+            </div>
+            <div class="item">
+              <p class="desc"><a href="https://github.com/matgrioni/expresimate">expresimate</a></p>
+              <p class="sub-desc">test your ability to approximate increasingly complex arithmetic expressions in less than 10 seconds</p>
+            </div>
+            <div class="item">
+              <p class="desc"><a href="https://github.com/matgrioni?tab=repositories">more...</a></p>
+            </div>
+          </div>
+          <div id="papers" class="experience">
+            <div class="item">
+              <p class="desc"><a href="static/ud.pdf">Assessing the annotation consistency of the Universal Dependencies corpora</a></p>
+              <p class="sub-desc">a look at assessing consistency in dependency corpora in english, finnish, and french ud v2 treebanks</p>
+            </div>
+          </div>
+          <div id="work" class="experience">
+            <div class="item">
+              <p class="desc">intern, quid, summer 2017</p>
+            </div>
+            <div class="item">
+              <p class="desc">intern, battelle, summer 2016</p>
+            </div>
+            <div class="item">
+              <p class="desc">web developer, taivara, 2015-2016</p>
+            </div>
+            <div class="item">
+              <p class="desc">intern, OSU, summer 2015</p>
+            </div>
+          </div>
+        </div>
+        <div id="contact-info" class="col-sm-8">
           <ul class="list-inline">
-            <li class="desc"><a href="mailto:matgrioni@gmail.com" class="social-icons"><i class="icon-envelope-letter"></i></a></li>
-            <li class="desc"><a href="github.com/matgrioni" class="social-icons"><i class="icon-social-github"></i></a></li>
-            <li class="desc"><a href="linkedin.com/in/matgrioni" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
+            <li><a href="mailto:matgrioni@gmail.com" class="social-icons"><i class="icon-envelope-letter"></i></a></li>
+            <li><a href="http://github.com/matgrioni" class="social-icons"><i class="icon-social-github"></i></a></li>
+            <li><a href="httP://linkedin.com/in/matgrioni" class="social-icons"><i class="icon-social-linkedin"></i></a></li>
           </ul>
         </div>
       </div>
