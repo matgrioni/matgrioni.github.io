@@ -1,0 +1,100 @@
+body {
+    font-family: 'Hind', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+a:focus, a:hover {
+    color: #bbb;
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1300px;
+    }
+}
+
+.title {
+    font-size: 68px;
+    margin-top: 40px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.desc {
+    font-size: 14px;
+}
+
+.sub-desc {
+    font-size: 12px;
+    color: #f0f0f0;
+}
+
+.intro-divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 50%;
+    padding: 11px;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.social-icons:hover {
+    color: #515769;
+    background: #fff;
+    padding: 11px;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+#contact-info {
+    text-align: right;
+    padding: 20px 0px;
+}
+
+.bulleted li:not(:last-child):after {
+    content: "\2022";
+    color: #fff;
+    margin: 0px 0px 0px 10px;;
+}
+
+.experience {
+    display: none;
+    margin: 0px 5px;
+}
+
+.experience-link {
+    cursor: pointer;
+}
+
+.experience-link:hover {
+    color: #bbb;
+    cursor: pointer;
+}
+
+.experience-link.active {
+    color: #bbb;
+}
+
+.experience item {
+    padding: 5px 0px;
+}
