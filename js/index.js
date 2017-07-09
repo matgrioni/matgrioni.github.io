@@ -13,6 +13,7 @@ $(function() {
   container.css("overflow", "hidden");
   container.css("width", $(window).width());
   container.css("height", $(window).height());
+  container.css("transform", "transform3d(0, 0, 0)");
 
   var img = $("<img>");
   img.attr("src", imgSrc);
@@ -22,14 +23,13 @@ $(function() {
     img.css("height", "auto");
   } else {
     img.css("width", "auto");
-    img.css("height", $(window).height());
+    img.css("height", $(window).height() + 300);
   }
-  img.css("position", "absolute");
-
   img.css("top", 0);
   img.css("bottom", 0);
   img.css("margin", "auto");
   img.css("left", 0);
+  img.css("position", "absolute");
 
   container.append(img);
   $("body").prepend(container);
