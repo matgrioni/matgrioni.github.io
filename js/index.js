@@ -13,6 +13,7 @@ $(function() {
   container.css("overflow", "hidden");
   container.css("width", $(window).width());
   container.css("height", $(window).height());
+  container.css("transform", "transform3d(0, 0, 0)");
 
   var img = $("<img>");
   img.attr("src", imgSrc);
@@ -20,16 +21,18 @@ $(function() {
   if ($(window).width() > 1200) {
     img.css("width", $(window).width());
     img.css("height", "auto");
+    img.css("top", 0);
+    img.css("bottom", 0);
+    img.css("margin", "auto");
+    img.css("left", 0);
   } else {
+    img.css("height", $(window).height() + 300);
     img.css("width", "auto");
-    img.css("height", $(window).height());
+    img.css("top", 0);
+    img.css("bottom", -60);
   }
   img.css("position", "absolute");
 
-  img.css("top", 0);
-  img.css("bottom", 0);
-  img.css("margin", "auto");
-  img.css("left", 0);
 
   container.append(img);
   $("body").prepend(container);

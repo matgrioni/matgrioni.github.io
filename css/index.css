@@ -3,11 +3,11 @@ body {
     color: #fff;
 }
 
-a {
+a, a:focus {
     color: #fff;
 }
 
-a:focus, a:hover {
+a:hover {
     color: #bbb;
     text-decoration: none;
 }
