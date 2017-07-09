@@ -56,7 +56,9 @@ $(function() {
         for (var j = 0; j < contents.length; j++) {
           if (contents[j].is(":visible")) {
             contents[j].fadeOut("200", function() {
-              contents[i].fadeIn("200");
+              if (j != i) {
+                contents[i].fadeIn("200");
+              }
             });
             toggled = true;
             break;
