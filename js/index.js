@@ -16,8 +16,14 @@ $(function() {
 
   var img = $("<img>");
   img.attr("src", imgSrc);
-  img.css("width", $(window).width());
-  img.css("height", "auto");
+
+  if ($(window).width() > 1200) {
+    img.css("width", $(window).width());
+    img.css("height", "auto");
+  } else {
+    img.css("width", "auto");
+    img.css("height", $(window).height());
+  }
   img.css("position", "absolute");
 
   img.css("top", 0);
