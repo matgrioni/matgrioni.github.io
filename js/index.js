@@ -21,14 +21,16 @@ $(function() {
   if ($(window).width() > 1200) {
     img.css("width", $(window).width());
     img.css("height", "auto");
+    img.css("top", 0);
+    img.css("bottom", 0);
+    img.css("margin", "auto");
+    img.css("left", 0);
   } else {
-    img.css("width", "auto");
     img.css("height", $(window).height() + 300);
+    img.css("width", "auto");
+    img.css("top", 0);
+    img.css("bottom", -60);
   }
-  img.css("top", 0);
-  img.css("bottom", 0);
-  img.css("margin", "auto");
-  img.css("left", 0);
   img.css("position", "absolute");
 
   container.append(img);
