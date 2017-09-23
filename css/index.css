@@ -5,10 +5,11 @@ body {
 
 a, a:focus {
     color: #fff;
+    text-decoration: none;
 }
 
-a:hover {
-    color: #bbb;
+a:hover, a:active {
+    color: #aaa;
     text-decoration: none;
 }
 
