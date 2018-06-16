@@ -98,12 +98,19 @@ a:hover, a:active {
     padding: 5px 0px;
 }
 
-@media (min-width: 1200px) {
+/*
+ * For large enough screens, make the main content only a fraction of the total
+ * screen.
+ */
+@media (min-width: 1400px) {
     .container {
         width: 1300px;
     }
 }
 
+/*
+ * Lower the title font size for small enough screens.
+ */
 @media (max-width: 400px) {
     .title {
         font-size: 50px;
