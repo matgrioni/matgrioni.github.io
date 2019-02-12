@@ -36,8 +36,8 @@ $(function() {
   container.append(img);
   $("body").prepend(container);
 
-  headers = [$("#projects-header"), $("#papers-header"), $("#work-header")];
-  contents = [$("#projects"), $("#papers"), $("#work")];
+  headers = [$("#projects-header"), $("#research-header"), $("#work-header")];
+  contents = [$("#projects"), $("#research"), $("#work")];
 
   for (var i = 0; i < headers.length; i++) {
     (function(i) {
